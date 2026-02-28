@@ -12,7 +12,7 @@ st.set_page_config(
 
 # --- BACKEND URL ---
 # When you deploy, this will change to your live API URL
-BACKEND_URL = "http://127.0.0.1:8000/generate"
+BACKEND_URL = "https://saas-review.onrender.com"
 
 # --- UI DESIGN ---
 st.title("🌟 AI Social Review Designer")
