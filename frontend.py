@@ -55,7 +55,7 @@ if st.button("🚀 Generate AI Post", use_container_width=True):
         with st.spinner("🧠 Backend is communicating with Cloudflare AI..."):
             try:
                 # Send the POST request to FastAPI
-                response = requests.post(BACKEND_URL, json=payload, timeout=70)
+                response = requests.post(f'{BACKEND_URL}/generate', json=payload, timeout=70)
                 
                 if response.status_code == 200:
                     data = response.json()
